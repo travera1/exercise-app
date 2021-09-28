@@ -7,94 +7,173 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Home Page</title>
+    <style>
+    .hero {
+        background: rgb(40, 1, 55) center / cover;
+    }
+    </style>
 </head>
 <body>
-    <div class="container">
-        
-    </div>
-    <nav class="navbar has-background-warning-light" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">  
-          <a class="navbar-item" href="#">
-            <i class="fas fa-2x fa-heartbeat"></i>
-          </a>     
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a href="index.html" class="navbar-item">
-              Home
-            </a>
-      
-            <a class="navbar-item">
-               Your exercises
-            </a>
-      
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                More
-              </a>
-      
-              <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  About
-                </a>
-                <a class="navbar-item">
-                  Friends
-                </a>
-                <a class="navbar-item">
-                  Contact
-                </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item">
-                  Report an issue
-                </a>
-              </div>
-            </div>
-          </div>
-          <a href=""></a>
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-info" href="signup.html">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light" href="login.html">
-                  Log in
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-     
-      <div class="block"></div>
-      
-      <div class="columns">
-          <div class="column is-3">
-
-          </div>
-          <div class="column is-6">
-            <div class="notification is-link is-light px-50px">
-                <div class="content">
-                    <p>This website allows you to create exercise routines and track exercise progress 
-                        over time, including features like usesr profiles and a friend list to share 
-                        exercise information.
-                    </p>
+    <section class="hero is-fullheight">
+        <div class="hero-head">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">  
+                  <a class="navbar-item has-text-danger" href="index.html">
+                    <i class="fas fa-2x fa-heartbeat"></i>
+                  </a>     
+                  <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+                <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-start">
+                    <a href="index.html" class="navbar-item has-text-white">
+                      Home
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link has-text-white">
+                        Food
+                      </a>
+                      <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                          Nutrition
+                        </a>
+                        <a class="navbar-item">
+                          Recipes and Meals
+                        </a>
+                        <a class="navbar-item">
+                          Meal Schedule
+                        </a>
+                      </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-white">
+                          Exercise
+                        </a>
+                        <div class="navbar-dropdown">
+                          <a class="navbar-item">
+                            Progress
+                          </a>
+                          <a class="navbar-item">
+                            Workout Routines
+                          </a>
+                          <a class="navbar-item">
+                            Goals
+                          </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-white">
+                          Community
+                        </a>
+                        <div class="navbar-dropdown">
+                          <a class="navbar-item">
+                            Messages
+                          </a>
+                          <a class="navbar-item">
+                            Friends
+                          </a>
+                        </div>
+                    </div>
+                    <a class="navbar-item has-text-white">
+                      Reports
+                    </a>
+                    <a class="navbar-item has-text-white">
+                    Settings
+                    </a>
+                  </div>
+                  <div class="navbar-end">
+                    <div class="navbar-item">
+                      <div class="buttons">
+                        <a class="button is-info" href="signup.html">
+                          <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light" href="login.html">
+                          Log in
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </nav><br><br>
+            <div class="columns">
+                <div class="column is-one-quarter">
+                  <div class="columns is-centered">
+                    <div class="column is-half has-text-centered">
+                        <div class="notification is-link is-light px-50px">
+                            <div class="content">
+                                <p>This website allows you to create exercise routines and track exercise progress 
+                                    over time, including features like user profiles and a friend list to share 
+                                    exercise information.
+                                </p>
+                                <img src="images/personal_fitness.jpg" alt="personal fitness">
+                            </div>
+                        </div>
+                    </div> 
+                  </div>
+                </div>
+                <div class="column is-half has-text-centered">
+                    <div class="notification is-link is-light px-50px">
+                        <div class="content">
+                            <p>This website allows you to create exercise routines and track exercise progress 
+                                over time, including features like user profiles and a friend list to share 
+                                exercise information.
+                            </p>
+                            <img style="padding-left: 1em;" src="images/personal_fitness.jpg" alt="personal fitness">
+                        </div>
+                    </div>
+                </div> 
+                <div class="column is-one-quarter">
+                  <div class="columns is-centered">
+                    <div class="column is-half has-text-centered">
+                        <div class="notification is-link is-light px-50px">
+                            <div class="content">
+                                <p>This website allows you to create exercise routines and track exercise progress 
+                                    over time, including features like user profiles and a friend list to share 
+                                    exercise information.
+                                </p>
+                                <img src="images/personal_fitness.jpg" alt="personal fitness">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
                 </div>
             </div>
-          </div>
-          <div class="column is-3">
-
-          </div>
+        </div>
+        <header class="hero-body">
           
-      </div>
-      
+        </header>
+        <main class="hero-foot center">
+            
+        </main>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
 
-      
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
