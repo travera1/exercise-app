@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>sign up email</title>
+    <style>
+      .hero {
+          background: rgb(40, 1, 55) center / cover;
+      }
+      </style>
+</head>
+<body>  
+  <div class="hero is-fullheight">
+    <div class="hero-head">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">  
+          <a class="navbar-item has-text-danger" href="index.html">
+            <i class="fas fa-2x fa-heartbeat"></i>
+          </a>     
+          <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      </nav><br><br>
+      <div class="columns is-centered is-vcentered">
+        <div class="column  has-text-white  is-three-quarters-mobile is-two-thirds-tablet is-half-desktop">
+          <div class="notification has-background-info">
+            <p class="title has-text-white has-text-centered">Sign up for free to start tracking.</p>
+          <form action="signupEmail.html">
+            <div class="field">
+                <label class="label has-text-warning">What's your email?</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="email" placeholder="Enter your email.">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div><br>
+            </div>
+            <div class="field">
+                <label class="label  has-text-warning">Confirm your email</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="email" placeholder="Enter your email again.">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div><br>
+            </div>
+            <div class="field">
+                <label class="label has-text-warning">Create a password</label>
+                <p class="control has-icons-left">
+                  <input class="input" type="password" placeholder="Password">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </p><br>
+            </div>
+            <div class="field">
+                <label class="label has-text-warning">What's your date of birth?</label>
+                <p class="control">
+                  <input class="input" type="date">
+                </p><br>
+            </div>
+            <div class="control has-text-centered">
+                <button class="button is-primary is-rounded  has-text-weight-bold" type="submit" style="width: 40%;">Sign Up</button>
+              </div><br><br>
+          </form>
+          <div class="has-text-centered">
+            <p class="">Already have an account?</p>
+            <a class="has-text-warning is-underlined" href="login.html">Log In</a>
+          </div>
+          
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
