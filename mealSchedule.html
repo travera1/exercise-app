@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Meal Schedule</title>
+    <style>
+    .hero {
+        background: rgb(40, 1, 55) center / cover;
+    }
+    </style>
+</head>
+<body>
+    <section class="hero is-fullheight">
+        <div class="hero-head">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">  
+                  <a class="navbar-item has-text-danger" href="index.html">
+                    <i class="fas fa-2x fa-heartbeat"></i>
+                  </a>     
+                  <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+                <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-start">
+                    <a href="index.html" class="navbar-item has-text-white">
+                      Home
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link has-text-white">
+                        Food
+                      </a>
+                      <div class="navbar-dropdown">
+                        <a class="navbar-item" href="nutrition.html">
+                          Nutrition
+                        </a>
+                        <a class="navbar-item" href="recipesAndMeals.html">
+                          Recipes and Meals
+                        </a>
+                        <a class="navbar-item" href="mealSchedule.html">
+                          Meal Schedule
+                        </a>
+                      </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-white">
+                          Exercise
+                        </a>
+                        <div class="navbar-dropdown">
+                          <a class="navbar-item" href="progress.html">
+                            Progress
+                          </a>
+                          <a class="navbar-item" href="workoutRoutines.html">
+                            Workout Routines
+                          </a>
+                          <a class="navbar-item" href="goals.html">
+                            Goals
+                          </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-white">
+                          Community
+                        </a>
+                        <div class="navbar-dropdown">
+                          <a class="navbar-item" href="messages.html">
+                            Messages
+                          </a>
+                          <a class="navbar-item" href="friends.html">
+                            Friends
+                          </a>
+                        </div>
+                    </div>
+                    <a class="navbar-item has-text-white" href="reports.html">
+                      Reports
+                    </a>
+                    <a class="navbar-item has-text-white" href="settings.html">
+                    Settings
+                    </a>
+                  </div>
+                  <div class="navbar-end">
+                    <div class="navbar-item">
+                      <div class="buttons">
+                        <a class="button is-info" href="signup.html">
+                          <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light" href="login.html">
+                          Log in
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </nav><br><br>
+            <div class="columns is-centered is-vcentered">
+                <div class="column  has-text-white  is-three-quarters-mobile is-two-thirds-tablet is-half-desktop">
+                  <div class="notification has-background-info">
+                    <p class="title has-text-white has-text-centered">Meal Scheudule</p>
+                  </div> 
+                  <p class="content">Plan your daily meals around a set calorie intake. We recommend using the calorie calculator linked below 
+                      if you havent already. </p>
+                </div>
+            </div>
+        </div>
+        <header class="hero-body">
+          
+        </header>
+        <main class="hero-foot center">
+            
+        </main>
+    </section>
+    <script>
+        //gives navbar burger functionality
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
