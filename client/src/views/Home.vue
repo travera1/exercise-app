@@ -1,18 +1,66 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section class="hero is-fullheight">
+      <div class="hero-head">
+          <div class="columns">
+              <div class="column is-one-quarter">
+                <div class="columns is-centered">
+                  <div class="column is-half has-text-centered">
+                      <div class="notification is-link is-light px-50px">
+                          <div class="content">
+                              <p>This website allows you to create exercise routines and track exercise progress 
+                                  over time, including features like user profiles and a friend list to share 
+                                  exercise information.
+                              </p>
+                              <img src="@/images/personal_fitness.jpg" alt="personal fitness">
+                          </div>
+                      </div>
+                  </div> 
+                </div>
+              </div>
+              <div class="column is-half has-text-centered">
+                  <div class="notification is-link is-light px-50px">
+                      <div class="content">
+                          <p>This website allows you to create exercise routines and track exercise progress 
+                              over time, including features like user profiles and a friend list to share 
+                              exercise information.
+                          </p>
+                          <img style="padding-left: 1em;" src="@/images/personal_fitness.jpg" alt="personal fitness">
+                      </div>
+                  </div>
+              </div> 
+              <div class="column is-one-quarter">
+                <div class="columns is-centered">
+                  <div class="column is-half has-text-centered">
+                      <div class="notification is-link is-light px-50px">
+                          <div class="content">
+                              <p>This website allows you to create exercise routines and track exercise progress 
+                                  over time, including features like user profiles and a friend list to share 
+                                  exercise information.
+                              </p>
+                              <img src="@/images/personal_fitness.jpg" alt="personal fitness">
+                          </div>
+                      </div>
+                  </div> 
+              </div>
+              </div>
+          </div>
+      </div>
+      <header class="hero-body">
+        
+      </header>
+      <main class="hero-foot center">
+          
+      </main>
+  </section>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+   
   }
 }
 </script>
