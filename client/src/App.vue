@@ -8,7 +8,8 @@
 
 <style lang="scss">
    .hero {
-        background: rgb(40, 1, 55) center / cover;
+        background: rgb(97, 38, 38) center / cover;
+        //purple: rbg(40 1 55)
     }
 </style>
 

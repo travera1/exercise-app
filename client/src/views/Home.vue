@@ -7,9 +7,7 @@
                   <div class="column is-half has-text-centered">
                       <div class="notification is-link is-light px-50px">
                           <div class="content">
-                              <p>This website allows you to create exercise routines and track exercise progress 
-                                  over time, including features like user profiles and a friend list to share 
-                                  exercise information.
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, ut. Est, accusamus, iure quam soluta voluptatibus voluptatum explicabo voluptates reprehenderit, quos nihil ea adipisci dolor.
                               </p>
                               <img src="@/images/personal_fitness.jpg" alt="personal fitness">
                           </div>
