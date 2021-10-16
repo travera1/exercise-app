@@ -1,7 +1,8 @@
-
+require('dotenv').config()
+const port = process.env.PORT
 const express = require('express')
 const app = express()
-const port = 3000
+const path = require('path')
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -9,6 +10,15 @@ app.get('/', (req, res) => {
 .get('/newpaltz', (req, res) => {
   res.send('hello New paltz')
 });
+
+
+if (process.env.NODE_ENV == 'production') {
+  app.use(express.static('client/dist'))
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html'))
+  })
+}
+
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`App is listening at http://localhost:${port}`)
 })
