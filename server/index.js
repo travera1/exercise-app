@@ -3,6 +3,14 @@ const port = process.env.PORT
 const express = require('express')
 const app = express()
 const path = require('path')
+const cors = require('cors')
+const morgan = require('morgan')
+
+//middleware
+app.use(cors())
+app.use(morgan('tiny'))
+app.use(express.urlencoded({extended: true})); 
+app.use(express.json());
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
