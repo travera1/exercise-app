@@ -8,6 +8,7 @@ import WorkoutRoutines from '../views/WorkoutRoutines.vue'
 import Goals from '../views/Goals.vue'
 import Messages from '../views/Messages.vue'
 import Friends from '../views/Friends.vue'
+import AddFriends from '../views/AddFriends.vue'
 import Reports from '../views/Reports.vue'
 import Settings from '../views/Settings.vue'
 import LogIn from '../views/LogIn.vue'
@@ -60,6 +61,11 @@ const routes = [
     path: '/friends',
     name: 'Friends',
     component: Friends
+  },
+  {
+    path: '/addfriends',
+    name: 'AddFriends',
+    component: AddFriends
   },
   {
     path: '/reports',

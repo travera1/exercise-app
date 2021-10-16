@@ -3,7 +3,7 @@
     <div class="hero-head">
       <div class="columns is-centered is-vcentered">
         <div class="column  has-text-white  is-three-quarters-mobile is-two-thirds-tablet is-half-desktop">
-          <div class="notification has-background-info">
+          <div class="notification has-background-dark">
             <p class="title has-text-white has-text-centered">Sign up for free to start tracking.</p>
           <form action="signupEmail.html">
             <div class="field">

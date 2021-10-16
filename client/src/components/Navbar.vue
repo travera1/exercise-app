@@ -4,13 +4,13 @@
         <router-link class="navbar-item has-text-danger" :to="{ name: 'Home' }">
             <i class="fas fa-2x fa-heartbeat"></i>
         </router-link>  
-        <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <a role="button" class="navbar-burger has-text-white" :class="{'is-active': isActive }" @click="isActive = !isActive" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         </a>
     </div>
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div id="navbarBasicExample" class="navbar-menu" :class="{'is-active':isActive }">
         <div class="navbar-start">
             <router-link class="navbar-item has-text-white" :to="{ name: 'Home' }">Home</router-link>
             
@@ -60,7 +60,12 @@
 
 <script>
 export default {
-
+    data() {
+        return {
+            isActive: false
+        }
+    }
+    
 }
 </script>
 

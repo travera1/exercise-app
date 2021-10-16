@@ -3,7 +3,7 @@
     <div class="hero-head">
       <div class="columns is-centered is-vcentered">
         <div class="column has-text-centered is-three-quarters-mobile is-two-thirds-tablet is-half-desktop">
-          <div class="notification" style="background-color: rgb(201, 189, 243);">
+          <div class="notification has-background-link-light">
             <form action="LogIn">
               <div class="field">
                 <label class="label has-text-left">Email address</label>
